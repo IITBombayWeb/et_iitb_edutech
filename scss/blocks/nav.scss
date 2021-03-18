@@ -142,3 +142,20 @@
     }
   }
 }
+
+#block-join {
+  margin-top: 90px;
+  margin-bottom: 90px;
+  text-align: center;
+
+  h5#block-join-menu {
+    display: inline-flex;
+    font-size: 22px;
+    line-height: 30.1px;
+    margin-right: 30px;
+  }
+
+  .nav {
+    display: inline-flex;
+  }
+}
