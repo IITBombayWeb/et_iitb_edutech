@@ -156,3 +156,35 @@
     }
   }
 }
+
+/* home slick slider */
+.home-slick-slider {
+    .slick {
+    	img {
+    		width: 100%;
+    	}
+    	iframe {
+    		width: 100%;
+    	}
+    }
+    .slide__caption {
+    	top: auto;
+    	position: absolute;
+    	bottom: 0;
+    	text-align: center;
+    	padding: 0;
+    	background: rgba(124, 124, 124, 0.7);
+    	.slide__title {
+    		color: #fff;
+    		font-size: 1.8rem;
+    	}
+    }
+    .slick__arrow {
+    	position: absolute;
+    	bottom: 0;
+    	top: auto;
+    	transform: none;
+    	min-height: 36px;
+    }
+}
+
