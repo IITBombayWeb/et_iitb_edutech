@@ -159,3 +159,12 @@
     display: inline-flex;
   }
 }
+
+.region-content-above {
+  ul.nav {
+    li {
+      min-width: 120px;
+      text-align: center;
+    }
+  }
+}

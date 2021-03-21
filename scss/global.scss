@@ -2,15 +2,19 @@ html,
 body {
   font-family: "Nunito Sans", sans-serif;
 }
+
 html {
   font-size: 10px;
 }
+
 html {
   font-size: 62.5%;
 }
+
 body {
   font-size: 1rem;
 }
+
 body {
   font-size: 100%;
 }
@@ -19,6 +23,58 @@ body {
 p {
   font-size: 1.2rem;
 }
+
 img {
   max-width: 100%;
+}
+
+/* Bootstrap tweaks */
+.carousel-control-prev,
+.carousel-control-next {
+  top: unset;
+  bottom: 15px;
+  z-index: 11;
+}
+
+.carousel-caption {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #7c7c7c;
+  opacity: 0.8;
+  padding-bottom: 5px;
+  padding-top: 5px;
+
+  p {
+    font-size: 18px;
+    color: #ffffff;
+    margin: 0;
+    transition: none;
+  }
+}
+
+.carousel.fade {
+  opacity: 1;
+}
+
+.carousel.fade .carousel-item {
+  transition: opacity ease-out .7s;
+  left: 0;
+  opacity: 0;
+  /* hide all slides */
+  top: 0;
+  position: absolute;
+  width: 100%;
+  display: block;
+}
+
+.carousel.fade .carousel-item:first-child {
+  top: auto;
+  opacity: 1;
+  /* show first slide */
+  position: relative;
+}
+
+.carousel.fade .carousel-item.active {
+  opacity: 1;
 }

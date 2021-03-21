@@ -13,6 +13,17 @@
 		}
 	}
 
+	.meta-side {
+		ul {
+			margin-bottom: 8px;;
+
+			li {
+				margin-bottom: 2px;
+				list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALCAYAAACprHcmAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACSSURBVHgBldG9DcIwEIbh7/wjWrfuGCEuswUrsAF0lCnpGCErhA3YIIzgjtYlVqwcTgciUuy3fvRdcYTca7zsFXRPjIYBg+8IQ3pPZ9tePS1Qsx7/0G8hxcmJvHjbgEtG7XQvwDigrEagPFODUY1DBeZnCZyBu0ikjgXrYY7yJKzrfCLp8veGNZQvP1KUzrad/wACUS1/YxIacwAAAABJRU5ErkJggg==');
+			}
+		}
+	}
+
 	.title {
 		font-size: 22px;
 		line-height: 30px;
@@ -59,12 +70,26 @@
 	}
 
 	.big-image {
+		position: relative;
 		width: 100%;
 		min-height: 337px;
 		background-size: cover;
 		background-position: 50% 50%;
 		border: 2px solid $lineColor;
 		border-radius: 4px;
+
+		span {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			color: #ffffff;
+			background: #7c7c7c;
+			opacity: 0.8;
+			font-weight: bold;
+			font-size: 18px;
+			line-height: 25px;
+			padding: 5px 20px;
+		}
 	}
 
 	.big-slider {
