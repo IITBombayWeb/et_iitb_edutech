@@ -9397,6 +9397,21 @@ img {
 .carousel.fade .carousel-item.active {
   opacity: 1; }
 
+.table {
+  border: 2px solid #E2C983;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  font-size: 1.4rem; }
+  .table td,
+  .table th {
+    padding-left: 2rem; }
+  .table thead th {
+    border-bottom: 2px solid #E2C983;
+    color: #1D6CC5;
+    font-size: 1.8rem; }
+
 .navbar .right-header .navbar-toggler-wrapper {
   margin-left: 1rem; }
 
@@ -9782,6 +9797,34 @@ main #block-edutech-page-title, main .node__submitted {
       background-image: url(../images/slider-arrow-right.svg);
       background-repeat: no-repeat; }
 
+/* home slick slider */
+.home-slick-slider .slick img {
+  width: 100%; }
+
+.home-slick-slider .slick iframe {
+  width: 100%; }
+
+.home-slick-slider .slide__caption {
+  top: auto;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  padding: 0;
+  background: rgba(124, 124, 124, 0.7); }
+  .home-slick-slider .slide__caption .slide__title {
+    color: #fff;
+    font-size: 1.8rem; }
+
+.home-slick-slider .slick__arrow {
+  position: absolute;
+  bottom: 0;
+  top: auto;
+  -webkit-transform: none;
+      -ms-transform: none;
+       -o-transform: none;
+          transform: none;
+  min-height: 36px; }
+
 .site-footer {
   background: #505050;
   border-top: 4px solid #e2c983;
@@ -9916,7 +9959,8 @@ main #block-edutech-page-title, main .node__submitted {
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
-    border-radius: 4px; }
+    border-radius: 4px;
+    margin-bottom: 10px; }
     .region-content-above .navbar-nav li:not(:last-child) {
       margin-right: 10px; }
     .region-content-above .navbar-nav li a {
@@ -9936,7 +9980,8 @@ main #block-edutech-page-title, main .node__submitted {
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
-    border-radius: 4px; }
+    border-radius: 4px;
+    text-align: center; }
     .region-sidebar-first .navbar-nav li:not(:last-child) {
       margin-bottom: 10px; }
     .region-sidebar-first .navbar-nav li a {
@@ -10401,39 +10446,3 @@ main #block-edutech-page-title, main .node__submitted {
     font-size: 2rem;
     line-height: 2.7rem;
     color: #2861A3; }
-
-
-
-
-
-/* slick slider home */
-.home-slick-slider .slick img {
-	width: 100%;
-}
-
-.home-slick-slider .slick iframe {
-	width: 100%;
-}
-
-.home-slick-slider .slide__caption {
-	top: auto;
-	position: absolute;
-	bottom: 0;
-	text-align: center;
-	padding: 0;
-	background: rgba(124, 124, 124, 0.7);
-}
-
-.home-slick-slider .slide__caption .slide__title {
-	color: #fff;
-	font-size: 1.8rem;
-}
-
-.home-slick-slider .slick__arrow {
-	position: absolute;
-	bottom: 0;
-	top: auto;
-	transform: none;
-	min-height: 36px;
-}
-
