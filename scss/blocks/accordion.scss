@@ -1,0 +1,94 @@
+/* views  */
+$panelPading: 2rem;
+$panelPadingMobile: 1rem;
+.view-course-view {
+    .panel {
+        border: 2px solid #E2C983;
+        box-sizing: border-box;
+        border-radius: 4px;
+        padding: 0 0 $panelPadingMobile $panelPadingMobile;
+
+        + .panel {
+            margin-top: $panelPadingMobile;
+        }
+    }
+    .panel-heading {
+        .panel-title {
+            margin-bottom: 0;
+            a {
+                position: relative;
+                padding-top: $panelPadingMobile;
+                display: block;
+                font-weight: bold;
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+                color: #1D6CC5;
+                &:hover {
+                    text-decoration: none;
+                }
+                &.collapsed {
+                    .arrow {
+                        transform: rotate(0deg);
+                    }
+                }
+            }
+            .ac-title {
+                display: block;
+                margin-right: 10rem;
+            }
+            .arrow {
+                // transition: transform 3s;
+                position: absolute;
+                right:0;
+                top:0;
+                margin-right: -2px;
+                margin-top: -2px;
+                border: 2px solid #E2C983;
+                box-sizing: border-box;
+                border-radius: 4px;
+                color: #E2C983;
+                padding: 2.2rem;
+                transform: rotate(180deg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAOCAYAAAA1+Nx+AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACoSURBVHgBvc2BDYIwEIXhO3YwzmFcyBEYgNqDBZgMu4eNK/SkNCoopdeS+BICNPB/AP+YNbq3N8XWXDXs3MM0OrRU79+r6ZRdHe5MexAfd4wUWlDPAG7fXxUii/i48Xlq4uvADg0B4ieMSIdT15bGj+eOFkApshX/AXKRVHwVkCKSeBRIIdL4JhBDKnAgjSeBVWS2VFwExBBJXAx8I9J49u6Duvgr558n8ZSaSrw1lx4AAAAASUVORK5CYII=')
+            }
+
+        }
+    }
+    .panel-body {
+        padding-top: 1rem;
+        margin-top: 1rem;
+        p {
+            font-size: 1.4rem;
+        }
+    }
+
+    @include media-breakpoint-up(sm) {
+        .panel {
+            padding: 0 0 $panelPading $panelPading;
+            + .panel {
+                margin-top: $panelPading;
+            }
+        }
+        .panel-heading {
+            .panel-title {
+                a {
+                    padding-top: $panelPading;
+                    font-size: 22px;
+                    line-height: 30px;
+                }
+                .ac-title {
+                    margin-right: 10rem;
+                }
+                .arrow {
+                    padding: 3.5rem;
+                }
+            }
+        }
+        .panel-body {
+            padding-top: $panelPading;
+            margin-top: $panelPading;
+        }
+    }
+}
