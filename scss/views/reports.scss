@@ -1,13 +1,9 @@
 .reports-view {
-	.row {
-		margin-bottom: 25px;
-	}
-
 	a {
 		text-decoration: none;
 	}
-
 	.report-box {
+		margin-bottom: 25px;
 		border: 1px solid $blue;
 		padding: 20px;
 		border-radius: 4px;

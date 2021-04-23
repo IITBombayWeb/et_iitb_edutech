@@ -1,10 +1,26 @@
 .activities-view {
 	margin-top: 70px;
 
-	.row {
-		margin-top: 100px;
-		margin-bottom: 100px;
+	// height match
+	.field-content {
+		height: 100%;
+		a {
+			height: 100%;
+			display: block;
+			.line-box {
+				height: 100%;
+			}
+		}
 	}
+
+	.activity-item {
+		margin-bottom: 6rem;
+	}
+
+	// .row {
+	// 	margin-top: 100px;
+	// 	margin-bottom: 100px;
+	// }
 
 	.view-content {
 		a,
@@ -46,6 +62,18 @@
 
 		.line-box:hover {
 			background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(235, 206, 125, 0.33) 100%), #F8F8F8;
+		}
+	}
+	@include media-breakpoint-up(md) {
+		margin-top: 7rem;
+		.activity-item {
+			margin-bottom: 8rem;
+		}
+	}
+	@include media-breakpoint-up(lg) {
+		margin-top: 9rem;
+		.activity-item {
+			margin-bottom: 10rem;
 		}
 	}
 }
