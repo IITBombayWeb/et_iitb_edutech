@@ -39,8 +39,11 @@
 }
 
 .logo-alt {
+  max-width: $navbar-brand-image-height;
   img {
-    max-width: 5.2rem;
+    @include media-breakpoint-up(lg) {
+      max-width: $navbar-brand-image-height-lg;
+    }
   }
 }
 @include media-breakpoint-up(md) {
@@ -98,8 +101,8 @@
   }
   .navbar-expand-lg {
     .navbar-nav .nav-link {
-      padding-right: 1rem;
-      padding-left: 1rem;
+      padding-right: 1.5rem;
+      padding-left: 1.5rem;
     }
   }
 }
@@ -144,8 +147,8 @@
 }
 
 #block-join {
-  margin-top: 90px;
-  margin-bottom: 90px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   text-align: center;
 
   h5#block-join-menu {
@@ -157,6 +160,10 @@
 
   .nav {
     display: inline-flex;
+  }
+  @include media-breakpoint-up(md) {
+      margin-top: 90px;
+      margin-bottom: 90px;
   }
 }
 

@@ -1,3 +1,8 @@
 .blogs-view {
 	@extend .product-view;
 }
+article {
+	&.node--type-featured-boxes, &.node--type-boxes {
+		display: none;
+	}
+}

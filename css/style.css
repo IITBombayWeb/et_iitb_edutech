@@ -7697,8 +7697,11 @@ img {
   font-family: "Cairo", sans-serif;
   font-size: 1.4rem; }
 
-.logo-alt img {
-  max-width: 5.2rem; }
+.logo-alt {
+  max-width: 36px; }
+  @media (min-width: 992px) {
+    .logo-alt img {
+      max-width: 66px; } }
 
 @media (min-width: 768px) {
   .navbar-brand .site-title {
@@ -7719,8 +7722,8 @@ img {
   .navbar-nav .dropdown-toggle::after {
     display: none; }
   .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 1rem;
-    padding-left: 1rem; } }
+    padding-right: 1.5rem;
+    padding-left: 1.5rem; } }
 
 @media (max-width: 991.98px) {
   .navbar .navbar-collapse {
@@ -7740,8 +7743,8 @@ img {
   white-space: nowrap; }
 
 #block-join {
-  margin-top: 90px;
-  margin-bottom: 90px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   text-align: center; }
   #block-join h5#block-join-menu {
     display: inline-flex;
@@ -7750,6 +7753,10 @@ img {
     margin-right: 30px; }
   #block-join .nav {
     display: inline-flex; }
+  @media (min-width: 768px) {
+    #block-join {
+      margin-top: 90px;
+      margin-bottom: 90px; } }
 
 .region-content-above ul.nav li {
   min-width: 120px;
@@ -7781,18 +7788,20 @@ main #block-edutech-page-title, main .node__submitted {
   display: flex;
   margin-bottom: 2rem; }
   .boxes.box-tailed .box .views-field {
-    padding: 1.5rem;
     box-sizing: border-box;
     border-radius: 4px;
     text-align: center;
     flex: 1 1 auto; }
-    @media (min-width: 992px) {
-      .boxes.box-tailed .box .views-field {
-        padding: 2.6rem; } }
   .boxes.box-tailed .box .inner:hover {
     cursor: pointer; }
   .boxes.box-tailed .box .inner a {
-    color: #000000; }
+    text-decoration: none;
+    color: #000000;
+    display: block;
+    padding: 1.5rem; }
+    @media (min-width: 992px) {
+      .boxes.box-tailed .box .inner a {
+        padding: 2.6rem; } }
   .boxes.box-tailed .box:nth-child(1) .views-field {
     border: 2px solid #99d883;
     border-bottom: 6px solid #99d883; }
@@ -8000,6 +8009,12 @@ main #block-edutech-page-title, main .node__submitted {
       background-repeat: no-repeat; }
 
 /* home slick slider */
+.home-slick-slider .slick-arrow:hover:before {
+  color: #c4c4c4; }
+
+.home-slick-slider .slick-arrow:before {
+  color: #ffffff; }
+
 .home-slick-slider .slick img {
   width: 100%; }
 
@@ -8204,14 +8219,14 @@ main #block-edutech-page-title, main .node__submitted {
 .region-content-above .navbar-nav {
   flex-direction: row; }
   .region-content-above .navbar-nav li {
-    border: 2px solid #ECCD78;
-    box-sizing: border-box;
-    border-radius: 4px;
     margin-bottom: 10px; }
     .region-content-above .navbar-nav li:not(:last-child) {
       margin-right: 10px; }
     .region-content-above .navbar-nav li a {
-      color: #7c7c7c; }
+      color: #7c7c7c;
+      border: 2px solid #ECCD78;
+      box-sizing: border-box;
+      border-radius: 4px; }
       .region-content-above .navbar-nav li a.active, .region-content-above .navbar-nav li a.is-active {
         background: #ECCD78;
         color: #000000; }
@@ -8219,24 +8234,30 @@ main #block-edutech-page-title, main .node__submitted {
 .region-sidebar-first .navbar-nav {
   flex-direction: column; }
   .region-sidebar-first .navbar-nav li {
-    border: 2px solid #ECCD78;
-    box-sizing: border-box;
-    border-radius: 4px;
     text-align: center; }
     .region-sidebar-first .navbar-nav li:not(:last-child) {
       margin-bottom: 10px; }
     .region-sidebar-first .navbar-nav li a {
-      color: #7c7c7c; }
+      color: #7c7c7c;
+      border: 2px solid #ECCD78;
+      box-sizing: border-box;
+      border-radius: 4px; }
       .region-sidebar-first .navbar-nav li a.active, .region-sidebar-first .navbar-nav li a.is-active {
         background: #ECCD78;
         color: #000000; }
 
 .has-nolink .navbar-nav li:first-of-type {
   background: #2861A3;
-  border: 2px solid #2861A3; }
+  border: 2px solid #2861A3;
+  box-sizing: border-box;
+  border-radius: 4px; }
   .has-nolink .navbar-nav li:first-of-type span {
     color: #ffffff;
     text-align: center; }
+
+@media (min-width: 576px) {
+  .has-nolink.menu--home li:first-child {
+    margin-right: 2.5rem; } }
 
 .solid-box {
   border: 2px solid #ECCD78;
@@ -8321,7 +8342,8 @@ main #block-edutech-page-title, main .node__submitted {
     margin-bottom: 10px; }
   .view-focus-areas .more {
     text-align: right;
-    display: flex; }
+    display: flex;
+    margin-bottom: .5rem; }
     .view-focus-areas .more a {
       font-size: 14px;
       line-height: 19.1px;
@@ -8419,7 +8441,8 @@ main #block-edutech-page-title, main .node__submitted {
   .spotlights-view .view-content .more,
   .blogs-view .view-content .more {
     text-align: left;
-    display: flex; }
+    display: flex;
+    margin-bottom: .5rem; }
     .product-view .view-content .more a, .facilities-view .view-content .more a, .awards-view .view-content .more a, .spotlights-view .view-content .more a, .blogs-view .view-content .more a {
       font-size: 14px;
       line-height: 19.1px;
@@ -8566,8 +8589,11 @@ main #block-edutech-page-title, main .node__submitted {
       flex-basis: 0;
       flex-grow: 1; } }
 
+article.node--type-featured-boxes, article.node--type-boxes {
+  display: none; }
+
 .left-right-box {
-  margin-bottom: 80px; }
+  margin-bottom: 4rem; }
   .left-right-box .meta-side,
   .left-right-box .media-side {
     padding-right: 0;
@@ -8595,17 +8621,24 @@ main #block-edutech-page-title, main .node__submitted {
   .left-right-box .title.right,
   .left-right-box .body.right {
     padding-right: 50px; }
+  .left-right-box .title.left {
+    text-align: center;
+    padding: 15px 0; }
+  .left-right-box .body.left {
+    padding-left: 0; }
+  .left-right-box .body.right {
+    padding-right: 0; }
   .left-right-box .big-text {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    min-height: 216px;
+    min-height: 160px;
     background: #f8f8f8;
     border: 2px solid #ECCD78;
     border-radius: 4px; }
     .left-right-box .big-text span {
-      font-size: 48px;
+      font-size: 4rem;
       line-height: 65.47px;
       color: #2861A3;
       max-width: 300px;
@@ -8614,7 +8647,7 @@ main #block-edutech-page-title, main .node__submitted {
   .left-right-box .big-image {
     position: relative;
     width: 100%;
-    min-height: 337px;
+    min-height: 250px;
     background-size: cover;
     background-position: 50% 50%;
     border: 2px solid #ECCD78;
@@ -8632,11 +8665,29 @@ main #block-edutech-page-title, main .node__submitted {
       padding: 5px 20px; }
   .left-right-box .big-slider {
     width: 100%;
-    min-height: 337px;
+    min-height: 250px;
     background-size: cover;
     background-position: 50% 50%;
     border: 2px solid #ECCD78;
     border-radius: 4px; }
+  @media (min-width: 768px) {
+    .left-right-box {
+      margin-bottom: 6rem; }
+      .left-right-box .big-slider, .left-right-box .big-image {
+        min-height: 337px; }
+      .left-right-box .big-text {
+        min-height: 216px; }
+        .left-right-box .big-text span {
+          font-size: 48px; }
+      .left-right-box .title.left {
+        text-align: auto;
+        padding: 0; }
+      .left-right-box .title.left,
+      .left-right-box .body.left {
+        padding-left: 50px; }
+      .left-right-box .title.right,
+      .left-right-box .body.right {
+        padding-right: 50px; } }
 
 .number-boxes a {
   text-decoration: none; }
@@ -8646,7 +8697,8 @@ main #block-edutech-page-title, main .node__submitted {
 .number-box {
   text-align: center;
   padding: 25px 0;
-  border-radius: 4px; }
+  border-radius: 4px;
+  margin-bottom: 1rem; }
   .number-box.bg-secondary {
     border: 2px solid #ECCD78; }
   .number-box.bg-light {
@@ -8660,6 +8712,9 @@ main #block-edutech-page-title, main .node__submitted {
     color: #434343;
     font-size: 24px;
     line-height: 32.74px; }
+  @media (min-width: 768px) {
+    .number-box {
+      margin-bottom: 0; } }
 
 .outreach {
   margin: 30px 0 90px; }
@@ -8667,27 +8722,49 @@ main #block-edutech-page-title, main .node__submitted {
     margin-bottom: 10px; }
   .outreach .number-box {
     text-align: left;
-    padding-left: 40px; }
+    padding: 1.5rem; }
     .outreach .number-box .number {
-      color: #505050; }
+      color: #505050;
+      font-size: 2.5rem; }
     .outreach .number-box .text {
       color: #505050;
-      font-size: 18px;
-      line-height: 24.55px; }
+      font-size: 1.4rem;
+      line-height: 1.6; }
   .outreach .image {
     padding-left: 10px; }
   .outreach .meta {
     margin-bottom: 20px;
-    font-size: 24px;
+    font-size: 1.4rem;
     line-height: 32.74px;
     font-weight: 900; }
     .outreach .meta .fa {
-      font-size: 48px;
-      margin-right: 10px; }
+      font-size: 2rem;
+      margin-right: 5px; }
     .outreach .meta .col:first-of-type .fa {
       color: #ECCD78; }
     .outreach .meta .col:last-of-type .fa {
       color: #2861A3; }
+  @media (min-width: 768px) {
+    .outreach {
+      margin: 30px 0 90px; }
+      .outreach .number-box {
+        padding-left: 40px; }
+        .outreach .number-box .number {
+          font-size: 36px; }
+        .outreach .number-box .text {
+          font-size: 18px;
+          line-height: 24.55px; }
+      .outreach .image {
+        padding-left: 10px; }
+      .outreach .meta {
+        font-size: 24px; }
+        .outreach .meta .fa {
+          font-size: 48px;
+          margin-right: 10px; }
+        .outreach .meta .col:first-of-type .fa {
+          color: #ECCD78; }
+        .outreach .meta .col:last-of-type .fa {
+          color: #2861A3; } }
 
 .featured-boxes a {
   text-decoration: none; }
@@ -8699,15 +8776,30 @@ main #block-edutech-page-title, main .node__submitted {
   border-radius: 4px;
   background: #f8f8f8;
   text-align: center;
-  padding: 8rem 6rem; }
+  padding: 3rem;
+  margin-bottom: 1.5rem; }
   .featured-boxes .featured-box h2 {
-    font-size: 4rem;
-    line-height: 5.5rem;
+    font-size: 3rem;
+    line-height: 4rem;
     font-weight: 900;
     color: #E3CB88; }
   .featured-boxes .featured-box h5 {
-    font-size: 2rem;
+    font-size: 1.6rem;
     line-height: 2.7rem;
     color: #2861A3; }
+  @media (min-width: 576px) {
+    .featured-boxes .featured-box {
+      margin-bottom: 2rem; } }
+  @media (min-width: 768px) {
+    .featured-boxes .featured-box {
+      margin-bottom: 0; }
+      .featured-boxes .featured-box h2 {
+        font-size: 4rem;
+        line-height: 5.5rem; }
+      .featured-boxes .featured-box h5 {
+        font-size: 2rem; } }
+  @media (min-width: 992px) {
+    .featured-boxes .featured-box {
+      padding: 8rem 6rem; } }
 
 /*# sourceMappingURL=style.css.map */

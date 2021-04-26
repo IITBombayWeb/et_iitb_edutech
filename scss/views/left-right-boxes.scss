@@ -1,5 +1,5 @@
 .left-right-box {
-	margin-bottom: 80px;
+	margin-bottom: 4rem;;
 
 	.meta-side,
 	.media-side {
@@ -38,7 +38,7 @@
 		text-align: justify;
 	}
 
-	.title, 
+	.title,
 	.body {
 		&.left {
 			padding-left: 50px;
@@ -48,19 +48,32 @@
 			padding-right: 50px;
 		}
 	}
+	.title.left {
+		text-align: center;
+    	padding: 15px 0;
+	}
+	.body {
+		&.left {
+			padding-left: 0;
+		}
+
+		&.right {
+			padding-right: 0;
+		}
+	}
 
 	.big-text {
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		width: 100%;
-		min-height: 216px;
+		min-height: 160px;
 		background: #f8f8f8;
 		border: 2px solid $lineColor;
 		border-radius: 4px;
 
 		span {
-			font-size: 48px;
+			font-size: 4rem;
 			line-height: 65.47px;
 			color: $blue;
 			max-width: 300px;
@@ -72,7 +85,7 @@
 	.big-image {
 		position: relative;
 		width: 100%;
-		min-height: 337px;
+		min-height: 250px;
 		background-size: cover;
 		background-position: 50% 50%;
 		border: 2px solid $lineColor;
@@ -94,10 +107,36 @@
 
 	.big-slider {
 		width: 100%;
-		min-height: 337px;
+		min-height: 250px;
 		background-size: cover;
 		background-position: 50% 50%;
 		border: 2px solid $lineColor;
 		border-radius: 4px;
+	}
+	@include media-breakpoint-up(md) {
+		margin-bottom: 6rem;
+		.big-slider, .big-image {
+			min-height: 337px;
+		}
+		.big-text {
+			min-height: 216px;
+			span {
+				font-size: 48px;
+			}
+		}
+		.title.left {
+			text-align: auto;
+			padding: 0;
+		}
+		.title,
+		.body {
+			&.left {
+				padding-left: 50px;
+			}
+
+			&.right {
+				padding-right: 50px;
+			}
+		}
 	}
 }

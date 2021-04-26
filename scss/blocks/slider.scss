@@ -159,6 +159,16 @@
 
 /* home slick slider */
 .home-slick-slider {
+    .slick-arrow {
+        &:hover {
+            &:before {
+                color: #c4c4c4;
+            }
+        }
+        &:before {
+            color: $white;
+        }
+    }
     .slick {
         img {
                 width: 100%;
