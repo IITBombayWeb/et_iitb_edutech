@@ -6,7 +6,7 @@
     border: 0;
     .nav-link {
       border: 0;
-      font-size: 1.4rem;
+      font-size: $site-base-font-size;
       color: #c4c4c4;
       &.active {
         color: #1d6cc5;

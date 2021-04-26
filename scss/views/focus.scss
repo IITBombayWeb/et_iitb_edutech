@@ -27,7 +27,7 @@
 
 	.body p {
 		font-weight: 300;
-		font-size: 14px;
+		font-size: $site-base-font-size;
 		line-height: 19.1px;
 		text-align: justify;
 		margin-bottom: 10px;
@@ -38,7 +38,7 @@
 		display: flex;
 		margin-bottom: .5rem;
 		a {
-			font-size: 14px;
+			font-size: $site-base-font-size;
 			line-height: 19.1px;
 			color: #000000;
 			background: $lineColor;

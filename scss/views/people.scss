@@ -19,20 +19,20 @@
 	}
 
 	.interests {
-		font-size: 14px;
+		font-size: $site-base-font-size;
 		line-height: 19.1px;
 		text-align: justify;
 	}
 
 	.guide {
 		margin-top: 15px;
-		font-size: 14px;
+		font-size: $site-base-font-size;
 		line-height: 19.1px;
 	}
 
 	.extra {
 		margin-top: 35px;
-		font-size: 14px;
+		font-size: $site-base-font-size;
 		line-height: 19.1px;
 
 		> div {

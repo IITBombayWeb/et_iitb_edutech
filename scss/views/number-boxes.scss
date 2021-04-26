@@ -59,7 +59,7 @@
 
         .text {
             color: #505050;
-            font-size: 1.4rem;
+            font-size: $site-base-font-size;
             line-height: 1.6;
         }
     }
@@ -70,7 +70,7 @@
 
     .meta {
         margin-bottom: 20px;
-        font-size: 1.4rem;
+        font-size: $site-base-font-size;
         line-height: 32.74px;
         font-weight: 900;
 

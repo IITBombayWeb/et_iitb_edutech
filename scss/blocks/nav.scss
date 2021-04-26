@@ -13,7 +13,7 @@
     .site {
       &-slogan {
         font-weight: bold;
-        font-size: 1.4rem;
+        font-size: $site-base-font-size;
       }
     }
     .site-title {
@@ -32,7 +32,7 @@
       }
       &-link {
         font-family: "Cairo", sans-serif;
-        font-size: 1.4rem;
+        font-size: $site-base-font-size;
       }
     }
   }

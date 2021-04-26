@@ -80,7 +80,7 @@
     .news-content {
       margin-right: 2.6rem;
       font-weight: 400;
-      font-size: 1.4rem;
+      font-size: $site-base-font-size;
       text-align: justify;
       color: $black;
       .news-title {
@@ -96,7 +96,7 @@
       margin-left: 0;
     }
     a {
-      font-size: 1.4rem;
+      font-size: $site-base-font-size;
       color: #c4c4c4;
     }
     .active a {
