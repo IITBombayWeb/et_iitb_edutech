@@ -16,6 +16,7 @@
 		max-width: 80%;
 		margin-bottom: 10px;
 		margin-left: auto;
+		color: #ffffff;
 	}
 
 	.title a {
@@ -23,6 +24,7 @@
 		font-weight: 900;
 		line-height: 34.1px;
 		color: #ffffff;
+		text-decoration: none;
 	}
 
 	.body p {
@@ -35,7 +37,7 @@
 
 	.more {
 		text-align: right;
-		display: flex;
+		// display: flex;
 		margin-bottom: .5rem;
 		a {
 			font-size: $site-base-font-size;
@@ -43,6 +45,7 @@
 			color: #000000;
 			background: $lineColor;
 			padding: 5px 15px;
+			text-decoration: none;
 		}
 	}
 	@include media-breakpoint-up(md) {

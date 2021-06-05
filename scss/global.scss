@@ -16,13 +16,15 @@ body {
 }
 
 body {
-  font-size: 100%;
+  font-size: 16px;
+  // font-size: 100%;
 }
 
 /* */
 p {
   font-size: $site-base-font-size;
   line-height: 1.6;
+  text-align: justify;
 }
 
 img {
@@ -82,7 +84,60 @@ img {
 
 
 // Table
-.region-content {
+article .node__content, .region-content {
+    table {
+      width: 100%;
+      margin-bottom: $spacer;
+      color: $table-color;
+      background-color: $table-bg; // Reset for nesting within parents with `background-color`.
+
+      th,
+      td {
+        padding: $table-cell-padding;
+        vertical-align: top;
+        border-top: $table-border-width solid $table-border-color;
+      }
+
+      thead th {
+        vertical-align: bottom;
+        border-bottom: (2 * $table-border-width) solid $table-border-color;
+      }
+
+      tbody + tbody {
+        border-top: (2 * $table-border-width) solid $table-border-color;
+      }
+    }
+
+    // Border versions
+    //
+    // Add or remove borders all around the table and between all the columns.
+
+    // Zebra-striping
+    //
+    // Default zebra-stripe styles (alternating gray and transparent backgrounds)
+
+    table {
+      tbody tr:nth-of-type(even) {
+        background-color: $table-accent-bg;
+      }
+    }
+
+
+    // Hover effect
+    //
+    // Placed here since it has to come after the potential zebra striping
+
+    table {
+      tbody tr {
+        &:hover {
+          color: $table-hover-color;
+          background-color: $table-hover-bg;
+        }
+      }
+    }
+
+    // custom
+
     p {
         font-size: $site-base-font-size;
     }
@@ -93,14 +148,18 @@ img {
         font-size: $site-base-font-size;
         td, th {
             padding-left: 2rem;
+            p {
+                margin: 0;
+            }
         }
-        thead th {
+        thead th, tbody th {
             border-bottom: 2px solid #E2C983;
             color: #1D6CC5;
             font-size: 1.8rem;
         }
     }
 }
+
 .bordered {
     border: 2px solid #EBCE7D;
     box-sizing: border-box;

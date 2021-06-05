@@ -7563,12 +7563,13 @@ body {
   font-size: 1rem; }
 
 body {
-  font-size: 100%; }
+  font-size: 16px; }
 
 /* */
 p {
   font-size: 1.6rem;
-  line-height: 1.6; }
+  line-height: 1.6;
+  text-align: justify; }
 
 img {
   max-width: 100%; }
@@ -7616,17 +7617,42 @@ img {
 .carousel.fade .carousel-item.active {
   opacity: 1; }
 
-.region-content p {
+article .node__content table, .region-content table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #212529; }
+  article .node__content table th,
+  article .node__content table td, .region-content table th,
+  .region-content table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6; }
+  article .node__content table thead th, .region-content table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6; }
+  article .node__content table tbody + tbody, .region-content table tbody + tbody {
+    border-top: 2px solid #dee2e6; }
+
+article .node__content table tbody tr:nth-of-type(even), .region-content table tbody tr:nth-of-type(even) {
+  background-color: rgba(0, 0, 0, 0.05); }
+
+article .node__content table tbody tr:hover, .region-content table tbody tr:hover {
+  color: #212529;
+  background-color: rgba(0, 0, 0, 0.075); }
+
+article .node__content p, .region-content p {
   font-size: 1.6rem; }
 
-.region-content table {
+article .node__content table, .region-content table {
   border: 2px solid #E2C983;
   box-sizing: border-box;
   border-radius: 4px;
   font-size: 1.6rem; }
-  .region-content table td, .region-content table th {
+  article .node__content table td, article .node__content table th, .region-content table td, .region-content table th {
     padding-left: 2rem; }
-  .region-content table thead th {
+    article .node__content table td p, article .node__content table th p, .region-content table td p, .region-content table th p {
+      margin: 0; }
+  article .node__content table thead th, article .node__content table tbody th, .region-content table thead th, .region-content table tbody th {
     border-bottom: 2px solid #E2C983;
     color: #1D6CC5;
     font-size: 1.8rem; }
@@ -7765,9 +7791,16 @@ img {
 
 header {
   background: #ECCD78;
-  padding-bottom: 0.9rem; }
+  padding-bottom: 0.9rem;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 99; }
   header .headder-wrapper {
     background: #ffffff; }
+
+main {
+  padding-top: 91px; }
 
 main #block-edutech-page-title, main .node__submitted {
   display: none; }
@@ -8200,11 +8233,13 @@ main #block-edutech-page-title, main .node__submitted {
     margin-bottom: 3rem; } }
 
 .region-content-above {
-  margin-top: 25px; }
+  padding-top: 25px;
+  background-color: white; }
 
 .region-content {
-  margin-top: 25px;
-  margin-bottom: 25px; }
+  margin-top: 170px;
+  margin-bottom: 25px;
+  z-index: 99px; }
 
 .region-content-below {
   margin-bottom: 25px; }
@@ -8246,6 +8281,14 @@ main #block-edutech-page-title, main .node__submitted {
       .region-sidebar-first .navbar-nav li a.active, .region-sidebar-first .navbar-nav li a.is-active {
         background: #ECCD78;
         color: #000000; }
+    .region-sidebar-first .navbar-nav li ul {
+      margin-top: 1rem;
+      list-style: none;
+      padding-left: 2rem; }
+      .region-sidebar-first .navbar-nav li ul li a {
+        border: 2px solid #C6C6C6; }
+        .region-sidebar-first .navbar-nav li ul li a.active, .region-sidebar-first .navbar-nav li ul li a.is-active {
+          background: #C6C6C6; }
 
 .has-nolink .navbar-nav li:first-of-type {
   background: #2861A3;
@@ -8284,6 +8327,9 @@ main #block-edutech-page-title, main .node__submitted {
       margin-bottom: 0;
       padding: 25px;
       flex-basis: 48%; } }
+
+.page-intro-text {
+  margin-top: 3rem; }
 
 .solid-box {
   border: 2px solid #ECCD78;
@@ -8329,12 +8375,14 @@ main #block-edutech-page-title, main .node__submitted {
     text-align: center;
     max-width: 80%;
     margin-bottom: 10px;
-    margin-left: auto; }
+    margin-left: auto;
+    color: #ffffff; }
   .view-focus-areas .title a {
     font-size: 25px;
     font-weight: 900;
     line-height: 34.1px;
-    color: #ffffff; }
+    color: #ffffff;
+    text-decoration: none; }
   .view-focus-areas .body p {
     font-weight: 300;
     font-size: 1.6rem;
@@ -8343,14 +8391,14 @@ main #block-edutech-page-title, main .node__submitted {
     margin-bottom: 10px; }
   .view-focus-areas .more {
     text-align: right;
-    display: flex;
     margin-bottom: .5rem; }
     .view-focus-areas .more a {
       font-size: 1.6rem;
       line-height: 19.1px;
       color: #000000;
       background: #ECCD78;
-      padding: 5px 15px; }
+      padding: 5px 15px;
+      text-decoration: none; }
   @media (min-width: 768px) {
     .view-focus-areas {
       margin-top: 6rem; }
@@ -8433,7 +8481,7 @@ main #block-edutech-page-title, main .node__submitted {
   .spotlights-view .view-content .body,
   .blogs-view .view-content .body {
     text-align: justify;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     color: #000000; }
   
   .product-view .view-content .more,
@@ -8490,6 +8538,8 @@ main #block-edutech-page-title, main .node__submitted {
     text-align: center;
     color: #2861A3;
     background: #ECCD78; }
+  .activities-view .view-content .focus-box .title {
+    color: #ffffff; }
   .activities-view .view-content .body {
     text-align: justify;
     color: #000000;

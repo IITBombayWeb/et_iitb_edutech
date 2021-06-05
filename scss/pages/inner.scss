@@ -1,10 +1,14 @@
 .region-content-above {
-    margin-top: 25px;
+    padding-top: 25px;
+    // position: fixed;
+    background-color: white;
 }
 
 .region-content {
-    margin-top: 25px;
+    margin-top: 170px;
     margin-bottom: 25px;
+    z-index: 99px;
+
 }
 
 .region-content-below {
@@ -75,6 +79,22 @@
                     color: #000000;
                 }
             }
+            ul {
+                margin-top: 1rem;
+                list-style: none;
+                padding-left: 2rem;
+                li {
+                    a {
+                        // color: #7c7c7c;
+                        border: 2px solid #C6C6C6;
+                        &.active,
+                        &.is-active {
+                            background:  #C6C6C6;
+                            // color: #000000;
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -133,4 +153,9 @@
             flex-basis: 48%;
         }
     }
+}
+
+// products top contents
+.page-intro-text {
+    margin-top: 3rem;
 }
