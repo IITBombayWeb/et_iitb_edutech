@@ -146,6 +146,7 @@ article .node__content, .region-content {
         box-sizing: border-box;
         border-radius: 4px;
         font-size: $site-base-font-size;
+        margin-bottom: 3rem;
         td, th {
             padding-left: 2rem;
             p {
@@ -156,6 +157,12 @@ article .node__content, .region-content {
             border-bottom: 2px solid #E2C983;
             color: #1D6CC5;
             font-size: 1.8rem;
+        }
+        &.table-coursc tr:last-child td {
+            border-bottom: 2px solid #E2C983;
+            color: #1D6CC5;
+            font-size: 1.8rem;
+            font-weight: bold;
         }
     }
 }

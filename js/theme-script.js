@@ -40,6 +40,8 @@
       $("ul.dropdown-menu", this).removeClass("show");
     });
 
+    $(".region-content-above .has-nolink .navbar-nav li:first-of-type").addClass("col-12 col-lg-2");
+
   });
 })(jQuery, Drupal);
 
