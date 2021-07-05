@@ -6,7 +6,7 @@ $panelPadingMobile: 1rem;
         border: 2px solid #E2C983;
         box-sizing: border-box;
         border-radius: 4px;
-        padding: 0 0 $panelPadingMobile $panelPadingMobile;
+        padding: 0 $panelPadingMobile $panelPadingMobile $panelPadingMobile;
 
         + .panel {
             margin-top: $panelPadingMobile;
@@ -61,6 +61,16 @@ $panelPadingMobile: 1rem;
         margin-top: 1rem;
         p {
             font-size: $site-base-font-size;
+        }
+        @include media-breakpoint-up(sm) {
+            .field-content {
+                .display-3-col {
+                    column-count: 3;
+                }
+                .display-2-col {
+                    column-count: 2;
+                }
+            }
         }
     }
 

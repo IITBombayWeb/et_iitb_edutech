@@ -7832,6 +7832,8 @@ main #block-edutech-page-title, main .node__submitted {
     border-radius: 4px;
     text-align: center;
     flex: 1 1 auto; }
+  .boxes.box-tailed .box .inner p {
+    text-align: center; }
   .boxes.box-tailed .box .inner:hover {
     cursor: pointer; }
   .boxes.box-tailed .box .inner a {
@@ -8152,7 +8154,7 @@ main #block-edutech-page-title, main .node__submitted {
   border: 2px solid #E2C983;
   box-sizing: border-box;
   border-radius: 4px;
-  padding: 0 0 1rem 1rem; }
+  padding: 0 1rem 1rem 1rem; }
   .accordion-view .panel + .panel {
     margin-top: 1rem; }
 
@@ -8194,6 +8196,11 @@ main #block-edutech-page-title, main .node__submitted {
   margin-top: 1rem; }
   .accordion-view .panel-body p {
     font-size: 1.6rem; }
+  @media (min-width: 576px) {
+    .accordion-view .panel-body .field-content .display-3-col {
+      column-count: 3; }
+    .accordion-view .panel-body .field-content .display-2-col {
+      column-count: 2; } }
 
 @media (min-width: 576px) {
   .accordion-view .panel {
@@ -8277,6 +8284,10 @@ main #block-edutech-page-title, main .node__submitted {
       .region-content-above .navbar-nav li a.active, .region-content-above .navbar-nav li a.is-active {
         background: #ECCD78;
         color: #000000; }
+
+@media (min-width: 992px) {
+  .region-sidebar-first .has-nolink .navbar-nav li:last-child {
+    margin-right: 0; } }
 
 .region-sidebar-first .navbar-nav {
   flex-direction: column; }

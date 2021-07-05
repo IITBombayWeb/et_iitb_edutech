@@ -61,6 +61,17 @@
 }
 
 .region-sidebar-first {
+    .has-nolink {
+        .navbar-nav {
+            li {
+                &:last-child {
+                    @include media-breakpoint-up(lg) {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
     .navbar-nav {
         flex-direction: column;
 

@@ -42,6 +42,12 @@
 
     $(".region-content-above .has-nolink .navbar-nav li:first-of-type").addClass("col-12 col-lg-2");
 
+    if ($('.region-sidebar-first .has-nolink').length) {
+        if ($('.region-content-above .has-nolink').length) {
+            $('.region-content-above .has-nolink .navbar-nav .nav-item.col-12.col-lg-2').hide();
+        }
+    }
+
   });
 })(jQuery, Drupal);
 
