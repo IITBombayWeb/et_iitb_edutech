@@ -64,10 +64,8 @@
     .has-nolink {
         .navbar-nav {
             li {
-                &:last-child {
-                    @include media-breakpoint-up(lg) {
-                        margin-right: 0;
-                    }
+                @include media-breakpoint-up(lg) {
+                    margin-right: 0 !important;
                 }
             }
         }
@@ -178,4 +176,20 @@
 // products top contents
 .page-intro-text {
     margin-top: 3rem;
+}
+
+
+// go to top
+.go-top {
+    position: fixed;
+    bottom: 65px;
+    right: 20px;
+    background-image: url(../images/arrow-top.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: $lineColor;
+    text-indent: -9999px;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
 }

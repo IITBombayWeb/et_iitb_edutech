@@ -48,6 +48,26 @@
         }
     }
 
+    // Scroll to top
+    var totop = $('#totop');
+
+    if (totop.length > 0) {
+        totop.hide();
+
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 100) {
+                totop.fadeIn();
+            } else {
+                totop.fadeOut();
+            }
+        });
+
+        totop.click(function(){
+            $("html, body").animate({ scrollTop: 0 }, 660);
+            return false;
+        });
+    }
+
   });
 })(jQuery, Drupal);
 

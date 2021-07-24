@@ -6,7 +6,11 @@ $panelPadingMobile: 1rem;
         border: 2px solid #E2C983;
         box-sizing: border-box;
         border-radius: 4px;
-        padding: 0 $panelPadingMobile $panelPadingMobile $panelPadingMobile;
+        padding: 0 0 $panelPadingMobile $panelPadingMobile;
+
+        .panel-body {
+            padding-right: $panelPadingMobile;
+        }
 
         + .panel {
             margin-top: $panelPadingMobile;

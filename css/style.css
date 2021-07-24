@@ -8154,7 +8154,9 @@ main #block-edutech-page-title, main .node__submitted {
   border: 2px solid #E2C983;
   box-sizing: border-box;
   border-radius: 4px;
-  padding: 0 1rem 1rem 1rem; }
+  padding: 0 0 1rem 1rem; }
+  .accordion-view .panel .panel-body {
+    padding-right: 1rem; }
   .accordion-view .panel + .panel {
     margin-top: 1rem; }
 
@@ -8286,8 +8288,8 @@ main #block-edutech-page-title, main .node__submitted {
         color: #000000; }
 
 @media (min-width: 992px) {
-  .region-sidebar-first .has-nolink .navbar-nav li:last-child {
-    margin-right: 0; } }
+  .region-sidebar-first .has-nolink .navbar-nav li {
+    margin-right: 0 !important; } }
 
 .region-sidebar-first .navbar-nav {
   flex-direction: column; }
@@ -8356,6 +8358,19 @@ main #block-edutech-page-title, main .node__submitted {
 
 .page-intro-text {
   margin-top: 3rem; }
+
+.go-top {
+  position: fixed;
+  bottom: 65px;
+  right: 20px;
+  background-image: url(../images/arrow-top.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #ECCD78;
+  text-indent: -9999px;
+  width: 30px;
+  height: 30px;
+  padding: 5px; }
 
 .solid-box {
   border: 2px solid #ECCD78;
