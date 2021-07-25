@@ -7803,10 +7803,14 @@ header {
   right: 0;
   z-index: 99; }
   header .headder-wrapper {
-    background: #ffffff; }
+    background: #F5F5F5; }
+    header .headder-wrapper .region-nav-main .dropdown .active, header .headder-wrapper .region-nav-main .dropdown :hover {
+      color: #ECCD78; }
+    header .headder-wrapper .region-nav-main .dropdown .dropdown-menu li :hover, header .headder-wrapper .region-nav-main .dropdown .dropdown-menu li .active {
+      color: #fff; }
 
 main {
-  padding-top: 91px; }
+  padding-top: 100px; }
 
 main #block-edutech-page-title, main .node__submitted {
   display: none; }
@@ -8026,6 +8030,7 @@ main #block-edutech-page-title, main .node__submitted {
       width: 100% !important;
       height: auto !important; }
   .news-slider-wrapper .next-prev-wrap {
+    display: none;
     height: 1.8rem;
     background: rgba(124, 124, 124, 0.7);
     position: absolute;
@@ -8274,18 +8279,19 @@ main #block-edutech-page-title, main .node__submitted {
 
 .region-content-above .navbar-nav {
   flex-direction: row; }
-  .region-content-above .navbar-nav li {
-    margin-bottom: 10px; }
-    .region-content-above .navbar-nav li:not(:last-child) {
-      margin-right: 10px; }
-    .region-content-above .navbar-nav li a {
-      color: #7c7c7c;
-      border: 2px solid #ECCD78;
-      box-sizing: border-box;
-      border-radius: 4px; }
-      .region-content-above .navbar-nav li a.active, .region-content-above .navbar-nav li a.is-active {
-        background: #ECCD78;
-        color: #000000; }
+  @media (max-width: 991.98px) {
+    .region-content-above .navbar-nav li {
+      margin-bottom: 10px; } }
+  .region-content-above .navbar-nav li:not(:last-child) {
+    margin-right: 10px; }
+  .region-content-above .navbar-nav li a {
+    color: #7c7c7c;
+    border: 2px solid #ECCD78;
+    box-sizing: border-box;
+    border-radius: 4px; }
+    .region-content-above .navbar-nav li a.active, .region-content-above .navbar-nav li a.is-active {
+      background: #ECCD78;
+      color: #000000; }
 
 @media (min-width: 992px) {
   .region-sidebar-first .has-nolink .navbar-nav li {

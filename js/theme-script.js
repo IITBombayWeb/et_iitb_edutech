@@ -68,6 +68,26 @@
         });
     }
 
+    //Scroll to section
+    $('.link-scroll').on('click', function(event) {
+        var src = $(this).attr('href');
+        var scrollPosition = $(src).offset().top;
+
+        // @todo:: Need to call this explicit
+        // for header--solid
+        var $solidHeader = $('header');
+        if ($solidHeader.length)  {
+            var scrollPosition = scrollPosition - ($solidHeader.outerHeight() + 20);
+        }
+
+        $('html, body').animate({
+            scrollTop: scrollPosition
+        }, 1500);
+
+        event.preventDefault();
+    });
+
+
   });
 })(jQuery, Drupal);
 
