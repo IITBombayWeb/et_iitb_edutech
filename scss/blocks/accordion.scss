@@ -35,10 +35,18 @@ $panelPadingMobile: 1rem;
                         transform: rotate(0deg);
                     }
                 }
+                .ac-title {
+                    display: inline-flex;
+                    .float-right {
+                        min-width: 200px;
+                        text-align: right;
+                    }
+                }
             }
             .ac-title {
-                display: block;
                 margin-right: 10rem;
+                display: flex;
+                justify-content: space-between;
             }
             .arrow {
                 // transition: transform 3s;
