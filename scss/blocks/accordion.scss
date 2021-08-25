@@ -27,6 +27,7 @@ $panelPadingMobile: 1rem;
                 font-size: 1.6rem;
                 line-height: 2.4rem;
                 color: #1D6CC5;
+                // display: flex;
                 &:hover {
                     text-decoration: none;
                 }
@@ -36,7 +37,10 @@ $panelPadingMobile: 1rem;
                     }
                 }
                 .ac-title {
-                    display: inline-flex;
+                    overflow: hidden;
+                    @include media-breakpoint-down(sm) {
+                        display: block;
+                    }
                     .float-right {
                         min-width: 200px;
                         text-align: right;
@@ -44,7 +48,7 @@ $panelPadingMobile: 1rem;
                 }
             }
             .ac-title {
-                margin-right: 10rem;
+                margin-right: 5rem;
                 display: flex;
                 justify-content: space-between;
             }

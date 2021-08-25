@@ -14,7 +14,9 @@ header {
             .dropdown-menu {
                 li {
                     :hover, .active {
-                        color: #fff;
+                        @include media-breakpoint-up(lg) {
+                            color: #fff;
+                        }
                     }
                 }
             }

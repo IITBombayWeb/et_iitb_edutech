@@ -111,7 +111,7 @@
   min-width: 356px;
   min-height: 207px;
   display: none;
-  @include media-breakpoint-up(lg) {
+  @include media-breakpoint-up(xl) {
     display: block;
   }
   .news-slider {

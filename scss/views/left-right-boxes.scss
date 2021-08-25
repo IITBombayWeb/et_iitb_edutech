@@ -18,6 +18,7 @@
 			margin-bottom: 8px;;
 
 			li {
+				line-height: 1.6;
 				margin-bottom: 2px;
 				list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALCAYAAACprHcmAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACSSURBVHgBldG9DcIwEIbh7/wjWrfuGCEuswUrsAF0lCnpGCErhA3YIIzgjtYlVqwcTgciUuy3fvRdcYTca7zsFXRPjIYBg+8IQ3pPZ9tePS1Qsx7/0G8hxcmJvHjbgEtG7XQvwDigrEagPFODUY1DBeZnCZyBu0ikjgXrYY7yJKzrfCLp8veGNZQvP1KUzrad/wACUS1/YxIacwAAAABJRU5ErkJggg==');
 			}
@@ -36,6 +37,9 @@
 		font-size: $site-base-font-size;
 		line-height: 19px;
 		text-align: justify;
+		a.btn-secondary {
+			font-size: 1.4rem;
+		}
 	}
 
 	.title,
@@ -49,7 +53,7 @@
 		}
 	}
 	.title.left {
-		text-align: center;
+		// text-align: center;
     	padding: 15px 0;
 	}
 	.body {

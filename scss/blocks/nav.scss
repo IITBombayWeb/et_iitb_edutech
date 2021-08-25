@@ -13,7 +13,7 @@
     .site {
       &-slogan {
         font-weight: bold;
-        font-size: $site-base-font-size;
+        font-size: 1.4rem;
       }
     }
     .site-title {
@@ -24,6 +24,9 @@
     }
     a.site-title {
       color: $blue;
+      text-transform: none;
+      font-size:2.2rem;
+      letter-spacing: 0.2;
     }
   }
   &-nav {
@@ -32,7 +35,7 @@
       }
       &-link {
         font-family: "Cairo", sans-serif;
-        font-size: $site-base-font-size;
+        font-size: 1.5rem;
       }
     }
   }
